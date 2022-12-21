@@ -21,17 +21,19 @@ const IndexPage = () => (
       <div className="Hero">
         <div className="HeroGroup">
           <h1>
-            Hello <b>Gatsby!</b>
+            Learn to <br />
+            design and code React apps
           </h1>
           <p className={styles.intro}>
-            Complete course about the best tools and design systems. Prototype and build apps with React and Swift.
+            Complete course about the best tools and design systems. Prototype
+            and build apps with React and Swift.
           </p>
-            {samplePageLinks.map((link, i) => (
-              <React.Fragment key={link.url}>
-                <Link to={link.url}>{link.text}</Link>
-                {i !== samplePageLinks.length - 1 && <> · </>}
-              </React.Fragment>
-            ))}
+          {samplePageLinks.map((link, i) => (
+            <React.Fragment key={link.url}>
+              <Link to={link.url}>{link.text}</Link>
+              {i !== samplePageLinks.length - 1 && <> · </>}
+            </React.Fragment>
+          ))}
         </div>
       </div>
     </div>

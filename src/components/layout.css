@@ -26,6 +26,11 @@ a{
   margin: 0;
   color: white;
   font-size: 60px;
+  opacity: 0;
+  animation: HeroAnimation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .Hero p{
   color: rgba(255, 255, 255, 0.8);
@@ -53,5 +58,16 @@ a{
   }
   .Hero p{
     font-size: 24px;
+  }
+}
+
+@keyframes HeroAnimation{
+  0%{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
