@@ -43,12 +43,12 @@ const IndexPage = () => (
             </React.Fragment>
           ))}
           <div className="Logos">
-              <img src={SketchLogo} width="50" alt="sketch-logo"/>
-              <img src={FigmaLogo} width="50" alt="sketch-logo"/>
-              <img src={StudioLogo} width="50" alt="sketch-logo"/>
-              <img src={FramerLogo} width="50" alt="sketch-logo"/>
-              <img src={ReactLogo} width="50" alt="sketch-logo"/>
-              <img src={SwiftLogo} width="50" alt="sketch-logo"/>
+            <img src={SketchLogo} width="50" alt="sketch-logo" />
+            <img src={FigmaLogo} width="50" alt="sketch-logo" />
+            <img src={StudioLogo} width="50" alt="sketch-logo" />
+            <img src={FramerLogo} width="50" alt="sketch-logo" />
+            <img src={ReactLogo} width="50" alt="sketch-logo" />
+            <img src={SwiftLogo} width="50" alt="sketch-logo" />
           </div>
           <svg
             width="100%"
@@ -78,4 +78,3 @@ const IndexPage = () => (
 export const Head = () => <Seo title="Home" />
 
 export default IndexPage
-
