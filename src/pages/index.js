@@ -5,6 +5,14 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 
+// import Logos
+import SketchLogo from "../images/Logos/logo-sketch.png"
+import FigmaLogo from "../images/Logos/logo-figma.png"
+import StudioLogo from "../images/Logos/logo-studio.png"
+import FramerLogo from "../images/Logos/logo-framer.png"
+import ReactLogo from "../images/Logos/logo-react.png"
+import SwiftLogo from "../images/Logos/logo-swift.png"
+
 const samplePageLinks = [
   {
     text: "Page 2",
@@ -34,10 +42,17 @@ const IndexPage = () => (
               {i !== samplePageLinks.length - 1 && <> · </>}
             </React.Fragment>
           ))}
+          <div className="Logos">
+              <img src={SketchLogo} width="50" alt="sketch-logo"/>
+              <img src={FigmaLogo} width="50" alt="sketch-logo"/>
+              <img src={StudioLogo} width="50" alt="sketch-logo"/>
+              <img src={FramerLogo} width="50" alt="sketch-logo"/>
+              <img src={ReactLogo} width="50" alt="sketch-logo"/>
+              <img src={SwiftLogo} width="50" alt="sketch-logo"/>
+          </div>
           <svg
             width="100%"
             height="172"
-            viewBox="0 0 100% 172"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
