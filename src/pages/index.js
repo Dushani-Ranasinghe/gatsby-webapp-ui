@@ -20,6 +20,7 @@ import Wallpaper3 from "../images/wallpaper3.jpg"
 import Wallpaper4 from "../images/wallpaper4.jpg"
 
 import Card from "../components/Card"
+import Section from "../components/Section"
 
 const samplePageLinks = [
   {
@@ -83,11 +84,22 @@ const IndexPage = () => (
         <h2>11 Courses, more coming</h2>
         <div className="CardGroup">
           <Card title="Design Systemn" text="10 Sections" image={Wallpaper} />
-          <Card title="React for Designers" text="12 Sections" image={Wallpaper2} />
+          <Card
+            title="React for Designers"
+            text="12 Sections"
+            image={Wallpaper2}
+          />
           <Card title="sound Design" text="5 Sections" image={Wallpaper3} />
           <Card title="ARKit 2" text="10 Sections" image={Wallpaper4} />
         </div>
       </div>
+      <Section
+        image={Wallpaper2}
+        logo={ReactLogo}
+        title="React for Beginners"
+        text="Learn how to build a modern site using React and the most efficient libraries to get yout site/product online. 
+        Get familiar with components, Grid CSS, animations, interactions, dynamic data with Comntenful and deployinh your site with Netlify."
+      />
     </div>
   </Layout>
 )
