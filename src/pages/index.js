@@ -13,6 +13,14 @@ import FramerLogo from "../images/Logos/logo-framer.png"
 import ReactLogo from "../images/Logos/logo-react.png"
 import SwiftLogo from "../images/Logos/logo-swift.png"
 
+//import wallpapers
+import Wallpaper from "../images/wallpaper.jpg"
+import Wallpaper2 from "../images/wallpaper2.jpg"
+import Wallpaper3 from "../images/wallpaper3.jpg"
+import Wallpaper4 from "../images/wallpaper4.jpg"
+
+import Card from "../components/Card"
+
 const samplePageLinks = [
   {
     text: "Page 2",
@@ -44,15 +52,15 @@ const IndexPage = () => (
           ))}
           <div className="Logos">
             <img src={SketchLogo} width="50" alt="sketch-logo" />
-            <img src={FigmaLogo} width="50" alt="sketch-logo" />
-            <img src={StudioLogo} width="50" alt="sketch-logo" />
-            <img src={FramerLogo} width="50" alt="sketch-logo" />
-            <img src={ReactLogo} width="50" alt="sketch-logo" />
-            <img src={SwiftLogo} width="50" alt="sketch-logo" />
+            <img src={FigmaLogo} width="50" alt="figma-logo" />
+            <img src={StudioLogo} width="50" alt="studio-logo" />
+            <img src={FramerLogo} width="50" alt="framer-logo" />
+            <img src={ReactLogo} width="50" alt="react-logo" />
+            <img src={SwiftLogo} width="50" alt="swift-logo" />
           </div>
           <svg
             width="100%"
-            height="172"
+            height="165"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -69,6 +77,15 @@ const IndexPage = () => (
               />
             </path>
           </svg>
+        </div>
+      </div>
+      <div className="Cards">
+        <h2>11 Courses, more coming</h2>
+        <div className="CardGroup">
+          <Card title="Design Systemn" text="10 Sections" image={Wallpaper} />
+          <Card title="React for Designers" text="12 Sections" image={Wallpaper2} />
+          <Card title="sound Design" text="5 Sections" image={Wallpaper3} />
+          <Card title="ARKit 2" text="10 Sections" image={Wallpaper4} />
         </div>
       </div>
     </div>
