@@ -22,6 +22,7 @@ import Wallpaper4 from "../images/wallpaper4.jpg"
 import Card from "../components/Card"
 import Section from "../components/Section"
 import Wave from "../components/Wave"
+import staticData from "../../staticData.json"
 
 const samplePageLinks = [
   {
@@ -79,6 +80,10 @@ const IndexPage = () => (
         text="Learn how to build a modern site using React and the most efficient libraries to get yout site/product online. 
         Get familiar with components, Grid CSS, animations, interactions, dynamic data with Comntenful and deployinh your site with Netlify."
       />
+      {staticData.cells.map(cell=>(
+        <div>{cell.title}</div>
+      ))}
+      
     </div>
   </Layout>
 )
