@@ -12,6 +12,7 @@ const Text = styled.p`
     font-weight:600;
     color:#486791; 
     max-width:500px;
+    text-align:center;
     margin:0 auto;
 `
 const Button = styled.button`
