@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet"
 
 import "./layout.css"
 import Header from "./header"
+import Footer from "./Footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -13,6 +14,14 @@ const Layout = ({ children }) => {
           title
           description
           keywords
+        }
+      }
+      allContentfulLink{
+        edges{
+          node{
+            title
+            url
+          }
         }
       }
     }
@@ -29,7 +38,8 @@ const Layout = ({ children }) => {
         ]}
       />
       <Header />
-      <main>{children}</main>
+      {children}
+      <Footer data={data}/>
     </>
   )
 }
