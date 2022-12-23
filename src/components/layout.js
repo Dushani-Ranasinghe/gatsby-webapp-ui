@@ -41,8 +41,8 @@ const Layout = ({ children }) => {
       <Header />
       {children}
       <Footer data={data}>
-        Backgrounds made in Cinema 4D, ios app in Swift, site in React.
-        <a href="mailto:uththaradushani@gmail.com">Email us</a> to ask anything. @2022
+        Backgrounds made in Cinema 4D, ios app in Swift, site in React. <br/>
+        <a href="mailto:uththaradushani@gmail.com">Email us</a> to ask anything. <br/> @2022
 
       </Footer>
     </>

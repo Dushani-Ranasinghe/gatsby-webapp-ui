@@ -45,6 +45,7 @@ const LinkGroup = styled.div`
     }
 `
 const Copyright = styled.div`
+text-align:center;
     color:#486791;
     max-width:500px;
     margin: 0 auto;
