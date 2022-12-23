@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-stripe-checkout": "^2.6.3",
+    "stripe": "^11.5.0",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
