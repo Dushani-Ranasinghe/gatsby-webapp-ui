@@ -16,11 +16,12 @@ const Layout = ({ children }) => {
           keywords
         }
       }
-      allContentfulLink{
+      allContentfulLink(sort:{fields: [createdAt],order:ASC}){
         edges{
           node{
             title
             url
+            createdAt
           }
         }
       }
@@ -42,7 +43,7 @@ const Layout = ({ children }) => {
       <Footer data={data}>
         Backgrounds made in Cinema 4D, ios app in Swift, site in React.
         <a href="mailto:uththaradushani@gmail.com">Email us</a> to ask anything. @2022
-        
+
       </Footer>
     </>
   )
